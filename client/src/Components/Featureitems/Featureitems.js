@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../designs/css/FeatureItems.css"
+import "../../designs/css/Featureitems.css"
 
 export default function FeatureItem({iconUrl, title, text}) {
   return (
