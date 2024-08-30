@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../../Components/Banner/Banner';
 import FeatureItems from '../../Components/Featureitems/Featureitems';
 import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/Header/Header';
 
 // Features Icon
 import Iconmoney from '../../designs/img/icon-money.png';
@@ -23,6 +24,8 @@ const textSecurity= "We use top of the line encryption to make sure your data an
 export default function Home() {
   return (
     <main>
+
+<Header />
       <Banner />
 
       <section className="features">
