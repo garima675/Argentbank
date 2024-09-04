@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
 
-<Header />
+
       <Banner />
 
       <section className="features">
@@ -48,7 +48,7 @@ export default function Home() {
 
       </section>
 
-      <Footer />
+      
     </main>
     
   )

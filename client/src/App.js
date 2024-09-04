@@ -1,19 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Homepage from "./Pages/Homepage/Homepage";
 import './designs/css/App.css';
 import Loginpage from "./Pages/Loginpage/Loginpage";
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
-function App() {
+ export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage/>} />
-        <Route path='login' element={<Loginpage />} />
-        
-      </Routes>
-    </BrowserRouter>
-  );
+    <div>
+      <Header />
+            
+            <Routes>
+                <Route path='/' element={<Homepage />} />
+                <Route path='Login' element={<Loginpage/>} />
+                
+            </Routes>
+            <Footer />
+            
+        </div>
+    )  
 }
-
-export default App;

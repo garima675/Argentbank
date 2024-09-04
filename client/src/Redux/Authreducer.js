@@ -1,4 +1,4 @@
-import { LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT } from "..authactions";
+import { LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT } from "./Authactions";
 
 /* Initial state of authentication */
 const initialState = {
