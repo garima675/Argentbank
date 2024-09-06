@@ -1,55 +1,52 @@
 import React from 'react';
 import Banner from '../../Components/Banner/Banner';
 import FeatureItems from '../../Components/Featureitems/Featureitems';
-import Footer from '../../Components/Footer/Footer';
-import Header from '../../Components/Header/Header';
+
 
 // Features Icon
 import Iconmoney from '../../designs/img/icon-money.png';
 import chatIcon from '../../designs/img/icon-chat.png';
 import Iconsecurity from '../../designs/img/icon-security.png';
 
+// Array of features
+const features = [
+  {
+    iconUrl: chatIcon,
+    title: "You are our #1 priority",
+    text: "Need to talk to a representative? You can get in touch through our 24/7 chat or through a phone call in less than 5 minutes."
+  },
+  {
+    iconUrl: Iconmoney,
+    title: "More savings means higher rates",
+    text: "The more you save with us, the higher your interest rate will be!"
+  },
+  {
+    iconUrl: Iconsecurity,
+    title: "Security you can trust",
+    text: "We use top-of-the-line encryption to make sure your data and money is always safe."
+  }
+];
 
-// Features title/text
-const titreChat= "You are our #1 priority"
-const textChat= "Need to talk to a representative? You can get in touch through our 24/7 chat or through a phone call in less than 5 minutes."
-
-const titreMoney= "More savings means higher rates"
-const textMoney= "The more you save with us, the higher your interest rate will be!"
-
-const titreSecurity= "Security you can trust"
-const textSecurity= "We use top of the line encryption to make sure your data and money is always safe."
 
 
 export default function Home() {
   return (
     <main>
-
-
-      <Banner />
-
-      <section className="features">
-        <h2 className="sr-only"></h2>
+    <Banner />
+    <section className="features">
+      <h2 className="sr-only"></h2>
+      {features.map((feature, index) => (
         <FeatureItems
-        iconUrl={chatIcon}
-        title={titreChat}
-        text={textChat}
+          key={index}
+          iconUrl={feature.iconUrl}
+          title={feature.title}
+          text={feature.text}
         />
-        <FeatureItems
-        iconUrl={Iconmoney}
-        title={titreMoney}
-        text={textMoney}
-        />
-        <FeatureItems
-        iconUrl={Iconsecurity}
-        title={titreSecurity}
-        text={textSecurity}
-        />
-
+      ))}
       </section>
 
       
     </main>
     
-  )
+  );
 }

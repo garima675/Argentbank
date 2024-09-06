@@ -12,7 +12,7 @@ export const authReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOGIN_SUCCESS:
             return {
-                ...state,
+                ...state, //... => spreadOperator
                 status: "SUCCEEDED",
                 isConnected: true,
                 token: action.payload,
@@ -27,10 +27,13 @@ export const authReducer = (state = initialState, action) => {
                 error: action.payload
             }
         }  
+
         case LOGOUT: {
             return initialState;
-        }  
+        } 
+        
         default:
             return state;
     }
 }
+

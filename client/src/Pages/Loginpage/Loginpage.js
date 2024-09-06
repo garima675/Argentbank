@@ -1,7 +1,7 @@
 import React from 'react';
 import Loginform from '../../Components/Loginform/Loginform';
-import Footer from '../../Components/Footer/Footer';
-import Header from '../../Components/Header/Header';
+
+
 
 
 /* Login page */
