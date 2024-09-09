@@ -3,6 +3,7 @@
 export const GET_USERPROFILE = "GET_USERPROFILE";
 
 export const EDIT_USERNAME = "EDIT_USERNAME";
+export const LOGOUT = "LOGOUT";
 
 /*Getting user data*/
 export const userProfile = (userData) => {
