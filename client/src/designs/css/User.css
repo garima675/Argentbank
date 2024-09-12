@@ -1,10 +1,12 @@
 .header {
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
 }
 
 .header h2 {
   font-size: 2rem;
+  position: relative;
+  bottom: 25px;
 }
 
 .header .edit-button {
@@ -14,6 +16,8 @@
   font-weight: bold;
   margin-top: 1.5rem;
   padding: 0.625rem;
+  position: relative;
+  bottom: 50px;
 }
 
 .header .edit-input {

@@ -11,6 +11,8 @@
   box-sizing: border-box;
   text-align: left;
   margin-bottom: 2rem;
+  position: relative;
+  bottom: 20px;
 }
 
 .account-amount {

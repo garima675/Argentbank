@@ -64,7 +64,7 @@ function Loginform() {
 
   return (
     <section className="sign-in-content">
-      <i className="fa-solid fa-circle-user"></i>
+      <i className="fa fa-user-circle"></i>
       <h2>Sign In</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-wrapper">
