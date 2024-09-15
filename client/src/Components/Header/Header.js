@@ -8,7 +8,7 @@ import { logout } from "../../Redux/Authactions.js";
 function Header() {
   /* Updates user data on header component from state redux */
   const isConnected = useSelector((state) => state.auth.token);
-  const firstname = useSelector((state) => state.user.userData.firstname);
+  const username = useSelector((state) => state.user.userData.username);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ function Header() {
           <div className="connected">
             <Link to="/profile">
               <i className="fa fa-user-circle" />
-              <p>{firstname}</p>
+              <p>{username}</p>
             </Link>
             <Link to="/" onClick={logoutHandler}>
               <i className="fa fa-sign-out" />
